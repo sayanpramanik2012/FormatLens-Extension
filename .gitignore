@@ -1,0 +1,5 @@
+release/*.zip
+work/
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "FormatLens",
+  "version": "1.0.0",
+  "description": "Format JSON and technical text in a private, local-only browser side panel.",
+  "author": "Sayan Pramanik",
+  "homepage_url": "https://sayanpramanik2012.github.io/FormatLens-Extension/",
+  "permissions": ["scripting", "sidePanel", "storage"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "action": {
+    "default_title": "Open FormatLens",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

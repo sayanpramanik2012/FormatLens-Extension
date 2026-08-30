@@ -1,0 +1,23 @@
+name: Validate extension
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate manifest and JavaScript syntax
+        run: |
+          node -e "const m=require('./manifest.json'); if(m.name!=='FormatLens'||m.version!=='1.0.0') process.exit(1)"
+          node --check background.js
+          node --check content.js
+          node --check sidepanel.js
+      - name: Verify required extension icons
+        run: test -f icons/icon16.png && test -f icons/icon32.png && test -f icons/icon48.png && test -f icons/icon128.png
