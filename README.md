@@ -1,86 +1,75 @@
 # FormatLens
 
-FormatLens turns dense JSON and technical text on any webpage into a readable side-panel view without sending the content anywhere.
+FormatLens turns JSON and technical text from a webpage into a readable browser side-panel view. Formatting happens locally, and the source page remains visible.
 
-![FormatLens promotional banner](store-assets/large-promotional-tile-1400x560.png)
+![FormatLens formatting a request payload](store-assets/large-promotional-tile-1400x560.png)
 
-## What it does
+## Features
 
-- Opens beside the current webpage in the Microsoft Edge or Google Chrome side panel.
-- Reads selected text first, then a focused input, textarea, editable field, `pre`, or `code` element.
-- Includes Pick Element mode for choosing a specific visible field.
-- Detects JSON, escaped JSON, and JSON nested inside JSON strings.
-- Provides syntax-highlighted Pretty, Raw, and collapsible Tree views.
-- Searches text, values, keys, and JSON paths.
-- Copies the full formatted document, individual values, or exact JSON paths.
-- Supports word wrap and system/light/dark themes.
-- Performs all processing locally with no backend, analytics, or network transmission.
+- Reads selected text, a focused field, or an element chosen with **Pick element**.
+- Detects JSON, escaped JSON, and JSON stored inside strings.
+- Provides syntax-highlighted **Pretty**, **Tree**, and **Raw** views.
+- Searches text, keys, values, and JSON paths.
+- Copies a complete document, one value, or an exact JSON path.
+- Supports word wrap and system, light, and dark themes.
+- Processes content locally without accounts, analytics, advertising, or a backend.
 
 ## Install locally
 
-1. Download and extract the release ZIP, or clone this repository.
-2. Open `edge://extensions` in Edge or `chrome://extensions` in Chrome.
+1. Clone or download this repository.
+2. Open `edge://extensions` or `chrome://extensions`.
 3. Enable **Developer mode**.
 4. Select **Load unpacked**.
-5. Choose the repository's **`extension`** folder—the folder that directly contains `manifest.json`.
-6. Open a normal HTTP/HTTPS webpage and click the FormatLens toolbar icon.
+5. Choose the [`extension`](extension) folder.
 
 ## Use FormatLens
 
-1. Select the payload or technical text on the webpage.
-2. Open FormatLens and choose **Extract page text**.
-3. If selection is impractical, choose **Pick element**, then click the field.
-4. Switch among **Pretty**, **Tree**, and **Raw** views.
-5. In Tree view, use the **Value** and **Path** buttons for precise copying.
-
-## ServiceNow notes
-
-FormatLens is optimized for values such as Request Payload fields. Selecting the field content first is the most reliable workflow.
-
-- Open shadow-root fields are inspected where practical.
-- Cross-origin iframes and protected browser pages cannot be read by extensions.
-- Some ServiceNow Workspace components render inside isolated frames or expose only truncated text. In those cases, select/copy the field value directly or use a classic form view.
-- FormatLens reads what the browser exposes in the page; it does not query ServiceNow APIs or retrieve hidden server-side data.
+1. Select technical text or focus the field containing it.
+2. Open FormatLens from the browser toolbar.
+3. Select **Extract page text**. If needed, use **Pick element** and choose the field directly.
+4. Inspect the result in **Pretty**, **Tree**, or **Raw** view.
 
 ## Permissions
 
-| Permission | Why it is required |
+| Permission | Purpose |
 |---|---|
 | `sidePanel` | Displays FormatLens beside the active webpage. |
-| `scripting` | Injects the local extraction helper when the user requests extraction or Pick Element mode. |
-| `storage` | Saves only the user's light/dark/system theme choice. |
-| HTTP/HTTPS host access | Allows extraction to work consistently on normal websites, including ServiceNow, even when the side panel is reopened through the browser UI. |
+| `scripting` | Runs the packaged extraction helper after the user requests it. |
+| `storage` | Saves only the selected theme. |
+| HTTP/HTTPS website access | Reads user-chosen content on ordinary webpages. |
 
-See the full [Privacy Policy](PRIVACY.md).
+FormatLens does not monitor pages in the background or transmit extracted content.
 
-## Repository layout
+## Browser limitations
+
+Browser-protected pages and some cross-origin or isolated iframe content cannot be inspected. If a field is inaccessible, select or copy its visible value directly.
+
+## Repository structure
 
 ```text
 FormatLens-Extension/
-├── extension/       Load this folder unpacked; ZIP its contents for Edge Add-ons
-├── docs/            GitHub Pages website and public privacy policy
+├── extension/       Browser extension package
+├── docs/            GitHub Pages website and privacy page
 ├── store-assets/    Store logo, promotional tiles, and screenshots
-├── STORE_LISTING.md Copy-ready Partner Center listing and checklist
-└── PRIVACY.md       Privacy policy source
+├── PRIVACY.md       Privacy policy source
+└── STORE_LISTING.md Edge Add-ons listing and submission notes
 ```
 
-## Create the Edge Add-ons ZIP
+## Publishing
 
-Open `extension/`, select everything inside it, and create a ZIP. The finished archive must have `manifest.json`, `background.js`, and the other extension files at its root—not inside an extra parent directory. Upload that package to Microsoft Partner Center.
-
-## Publishing kit
-
-- [Edge Add-ons submission copy and field-by-field checklist](STORE_LISTING.md)
+- [Website](https://sayanpramanik2012.github.io/FormatLens-Extension/)
+- [Privacy policy](https://sayanpramanik2012.github.io/FormatLens-Extension/privacy-policy.html)
+- [Store listing copy and checklist](STORE_LISTING.md)
 - [Store artwork](store-assets)
-- [Public privacy website](docs/privacy-policy.html)
-- [Privacy policy source](PRIVACY.md)
 
-## Privacy and security
+To create the Edge Add-ons package, ZIP the contents of [`extension`](extension)—not the folder itself. `manifest.json` must be at the ZIP root.
 
-FormatLens does not collect, sell, share, upload, or remotely process webpage content. Extracted content exists only in the open side panel and is discarded when that extension context is closed or reloaded. The only persistent setting is the chosen theme.
+## Privacy
 
-Security reports can be submitted through [GitHub Issues](https://github.com/sayanpramanik2012/FormatLens-Extension/issues).
+Extracted content is processed only in the side panel and is discarded when that extension context closes or reloads. The only persistent setting is the selected theme.
+
+[Read the privacy policy](PRIVACY.md)
 
 ## License
 
-MIT License. See [LICENSE](LICENSE).
+[MIT](LICENSE)

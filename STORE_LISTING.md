@@ -1,60 +1,57 @@
-# Microsoft Edge Add-ons Submission Kit — FormatLens 1.0.0
+# Microsoft Edge Add-ons listing — FormatLens
 
-This file contains the prepared values for Microsoft Partner Center. Review them once against the final uploaded package before submitting.
+Prepared submission copy for FormatLens 1.0.0.
 
-## Package and URLs
+## URLs
 
-- **Extension source folder:** `extension/`
-- **Package:** `release/FormatLens-v1.0.0-edge.zip`
+- **Website:** https://sayanpramanik2012.github.io/FormatLens-Extension/
+- **Privacy policy:** https://sayanpramanik2012.github.io/FormatLens-Extension/privacy-policy.html
+- **Support:** https://github.com/sayanpramanik2012/FormatLens-Extension/issues
+- **Source:** https://github.com/sayanpramanik2012/FormatLens-Extension
+- **Store listing:** Pending publication
 
-To package manually, open `extension/`, select everything inside it, and create the ZIP. Do not ZIP the repository root or create an extra outer `extension` directory inside the archive; Partner Center must find `manifest.json` at the archive root.
-- **Website:** `https://sayanpramanik2012.github.io/FormatLens-Extension/`
-- **Privacy Policy URL:** `https://sayanpramanik2012.github.io/FormatLens-Extension/privacy-policy.html`
-- **Support URL:** `https://github.com/sayanpramanik2012/FormatLens-Extension/issues`
-- **Source repository:** `https://github.com/sayanpramanik2012/FormatLens-Extension`
+## Store properties
 
-## Availability
-
-- **Visibility:** Public
-- **Markets:** All available markets
+- **Category:** Developer Tools
 - **Pricing:** Free
-
-## Properties
-
-- **Category:** Developer Tools. If that category is unavailable in your Partner Center view, choose Productivity.
+- **Markets:** All available markets
 - **Mature content:** No
-- **Website:** Use the Website URL above.
-- **Support contact:** Use the Support URL above. Add your preferred support email only if Partner Center requires an email; no email is embedded in this repository.
 
-## Store listing
-
-### Extension name
+## Extension name
 
 FormatLens
 
-### Short description
+## Short description
 
-Format JSON and technical text in a private, local-only browser side panel.
+Format JSON and technical text in a private, local browser side panel.
 
-### Full description
+## Description
 
-FormatLens makes dense JSON and technical text easier to understand without taking you away from the webpage you are working on. Select text, focus a field, or use Pick Element, then open a clean side-panel copy in Pretty, Tree, or Raw view.
+FormatLens makes dense JSON and technical text easier to inspect without leaving the webpage.
 
-It is especially useful for ServiceNow request and response payloads, API results, logs, configuration values, escaped JSON, and JSON nested inside strings. FormatLens automatically detects supported JSON, formats it with readable indentation and syntax highlighting, and creates a collapsible tree. Search across text, values, keys, and JSON paths; copy the complete formatted document or copy an individual value or path. Word wrapping and system, light, and dark themes are included.
+Select text, focus a field, or use Pick element. FormatLens opens the content in a browser side panel with Pretty, Tree, and Raw views. It detects standard, escaped, and nested JSON; searches text, keys, values, and JSON paths; and copies a complete document, one value, or an exact path.
 
-Privacy is built into the design. Formatting, parsing, search, and copying happen locally in the browser. FormatLens has no backend, analytics, advertising, account requirement, remote code, or network transmission of webpage content. It reads page text only when you use its extraction controls.
+FormatLens is useful for ServiceNow payloads, API responses, logs, and configuration values. Word wrapping and system, light, and dark themes are included.
 
-Important limitation: browser-protected pages and some cross-origin iframe or isolated workspace fields cannot be inspected because browser security prevents extension access. Selecting or copying the field value directly remains the most reliable fallback.
+All formatting and search happen locally. FormatLens has no account, backend, analytics, advertising, remote code, or transmission of webpage content. It reads page text only after the user requests extraction.
 
-### Search terms
+Browser-protected pages and some cross-origin or isolated iframe content cannot be inspected because of browser security restrictions.
 
-JSON formatter, JSON viewer, pretty print, payload viewer, ServiceNow payload, developer tools, JSON tree, escaped JSON, technical text, API response
+## Search terms
+
+- JSON formatter
+- JSON viewer
+- Payload viewer
+- JSON tree
+- ServiceNow payload
+- API response
+- Developer tools
 
 ## Visual assets
 
 | Partner Center field | File |
 |---|---|
-| Extension logo | `store-assets/extension-logo-300.png` (300×300) |
+| Extension logo | `store-assets/extension-logo-300.png` |
 | Small promotional tile | `store-assets/small-promotional-tile-440x280.png` |
 | Large promotional tile | `store-assets/large-promotional-tile-1400x560.png` |
 | Screenshot 1 | `store-assets/screenshot-1-pretty-1280x800.png` |
@@ -65,58 +62,44 @@ JSON formatter, JSON viewer, pretty print, payload viewer, ServiceNow payload, d
 
 ### Single purpose
 
-FormatLens reads technical text that the user explicitly selects or chooses on the active webpage and presents a locally formatted, searchable Pretty, Tree, or Raw view in the browser side panel.
+FormatLens reads technical text chosen by the user and presents a locally formatted, searchable Pretty, Tree, or Raw view in the browser side panel.
 
 ### Permission justifications
 
-- **sidePanel:** Required to show the formatted technical-text viewer beside the active webpage without modifying the original page.
-- **scripting:** Required to run the extension's bundled extraction helper after the user chooses Extract page text or Pick element.
-- **storage:** Required only to save the user's system, light, or dark theme preference.
-- **http://*/* and https://*/*:** Required because FormatLens is designed to inspect user-chosen technical text on arbitrary normal websites, including ServiceNow instances. Access is used only after the user invokes an extraction control and no page content is transmitted.
+- **`sidePanel`:** displays FormatLens beside the active webpage.
+- **`scripting`:** runs the packaged extraction helper after the user selects Extract page text or Pick element.
+- **`storage`:** saves only the system, light, or dark theme preference.
+- **HTTP/HTTPS website access:** reads user-chosen technical text on ordinary websites. Access is used only after the user invokes extraction.
 
 ### Remote code
 
-**No.** FormatLens does not execute remotely hosted code. All HTML, CSS, and JavaScript required by the extension is included in the submitted package.
+No. All HTML, CSS, and JavaScript used by FormatLens is included in the extension package.
 
 ### Data usage
 
-- **User data collected:** None.
-- FormatLens accesses user-chosen page text only for local, user-requested formatting.
-- It does not transmit or persist extracted page content.
-- It does not use data for advertising, analytics, profiling, creditworthiness, or unrelated purposes.
-- It does not sell or transfer user data.
-- The only persistent extension data is the non-sensitive theme preference stored locally.
+- User data collected: None.
+- Extracted page content is processed locally and is not transmitted or persisted.
+- Data is not used for advertising, analytics, profiling, creditworthiness, or unrelated purposes.
+- The only persistent extension data is the local theme preference.
 
-Use the public Privacy Policy URL above even if the form considers the policy optional; the declared host access can trigger a privacy-policy requirement.
+## Certification notes
 
-## Certification testing notes
-
-FormatLens is a Manifest V3 side-panel extension with no account, backend, payment, region restriction, remote code, or test credentials.
-
-Suggested test:
-
-1. Open `https://json.org/example.html` or any normal HTTP/HTTPS page containing JSON.
+1. Open a normal HTTP/HTTPS page containing JSON.
 2. Select a JSON block.
-3. Click the FormatLens toolbar icon to open the side panel.
+3. Open FormatLens from the toolbar.
 4. Select **Extract page text**.
-5. Confirm that JSON is detected and formatted in Pretty view.
-6. Open Tree view and expand nodes.
-7. Use the Value and Path buttons, search, word wrap, Copy, and the theme control.
-8. Test Pick Element on a visible `pre`, `code`, input, textarea, or contenteditable element.
+5. Confirm the content appears in Pretty view.
+6. Test Tree and Raw views, search, copy, word wrap, Pick element, and the theme control.
 
-All processing is local. Protected browser pages and cross-origin iframe content are intentionally inaccessible because of browser security restrictions.
+No account, payment, backend, region restriction, or test credential is required. Protected browser pages and cross-origin iframe content are intentionally inaccessible.
 
-## Final submission checklist
+## Submission checklist
 
-- [ ] Load the exact release ZIP unpacked in the latest stable Edge and perform the certification test above.
-- [ ] Confirm the toolbar and Extensions page show the FormatLens icon.
-- [ ] Confirm package version is `1.0.0` and `manifest.json` is at the ZIP root.
-- [ ] Confirm the GitHub Pages website and privacy URL are publicly accessible.
-- [ ] Upload the ZIP under Packages.
-- [ ] Complete Availability, Properties, Privacy, and the `en-US` store listing.
-- [ ] Upload the logo, both promotional tiles, and three screenshots.
-- [ ] Paste the certification notes.
-- [ ] Save every page, verify the language row shows Complete, then publish.
-- [ ] Treat the submission as pending until Partner Center shows **In the Store**.
-
-Official references: [Publish a Microsoft Edge extension](https://learn.microsoft.com/en-us/microsoft-edge/extensions/publish/publish-extension) and [Microsoft Edge Add-ons developer policies](https://learn.microsoft.com/en-us/legal/microsoft-edge/extensions/developer-policies).
+- [ ] ZIP the contents of `extension/` with `manifest.json` at the archive root.
+- [ ] Load the exact package unpacked in the latest stable Edge and run the certification test.
+- [ ] Confirm version `1.0.0` and all extension icons.
+- [ ] Confirm the website, privacy policy, and support links are public.
+- [ ] Upload the package and store artwork.
+- [ ] Complete Availability, Properties, Privacy, and the `en-US` listing.
+- [ ] Add the final Edge Add-ons URL to the website and this file after publication.
+- [ ] Publish and wait until Partner Center reports **In the Store**.

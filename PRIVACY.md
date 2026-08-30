@@ -1,55 +1,38 @@
 # FormatLens Privacy Policy
 
-**Effective date:** August 31, 2026  
-**Last updated:** August 31, 2026
+**Effective date:** August 31, 2026
 
-FormatLens is a browser extension that formats JSON and technical text in a browser side panel. This policy explains what the extension can access and how that information is handled.
+FormatLens formats JSON and technical text inside the browser side panel. Extracted webpage content is not sent to the developer or stored by the extension.
 
 ## Information FormatLens accesses
 
-When you explicitly use **Extract page text** or **Pick element**, FormatLens may read:
+After the user selects **Extract page text** or **Pick element**, FormatLens may read:
 
-- text you selected on the active webpage;
-- the value or visible text of a focused or chosen page element; and
-- nearby technical text exposed by the active page when no selection or focused value is available.
+- selected text on the active webpage;
+- the value or visible text of a focused or chosen element; or
+- nearby technical text exposed by the page when no selection or focused value is available.
 
-FormatLens also stores your selected light, dark, or system theme preference in the browser's local extension storage.
+FormatLens stores only the user's system, light, or dark theme preference in local extension storage.
 
-## How information is used
+## How the information is used
 
-Page text is used only to create the Pretty, Tree, and Raw views, perform local search, and copy content at your request. All parsing and formatting occurs locally in your browser.
+Page text is used only to create Pretty, Tree, and Raw views, perform local search, and copy content at the user's request. Extracted content remains in the memory of the open side panel and is discarded when that extension context closes or reloads.
 
-## Data collection and transmission
+## Data collection and sharing
 
-FormatLens does not collect, upload, transmit, sell, rent, share, or use webpage content for advertising, analytics, profiling, or any unrelated purpose. The extension has no backend service and makes no network requests.
-
-Extracted content is held only in the memory of the open side panel. It is discarded when the side panel's extension context is closed or reloaded. FormatLens does not store extracted webpage content in browser storage.
+FormatLens does not collect, upload, transmit, sell, rent, or share webpage content. It has no backend, analytics, advertising, tracking SDK, external processing service, or remotely hosted executable code.
 
 ## Permissions
 
-- **Side panel:** displays the FormatLens interface beside the webpage.
-- **Scripting:** runs the bundled local extraction helper after you request extraction or Pick Element mode.
-- **Storage:** saves only your theme preference.
-- **HTTP/HTTPS website access:** allows FormatLens to read the page element you explicitly inspect on ordinary websites. It does not permit access to protected browser pages and is not used for background monitoring.
+- **Side panel:** displays FormatLens beside the active webpage.
+- **Scripting:** runs the packaged extraction helper after the user requests extraction or Pick element mode.
+- **Storage:** saves only the theme preference.
+- **HTTP/HTTPS website access:** enables user-requested extraction on ordinary webpages. It is not used for background monitoring.
 
-## Third parties
+## User controls
 
-FormatLens does not include third-party analytics, advertising, tracking SDKs, remote code, or external processing services. No personal information is disclosed to third parties by the extension.
+Users decide when FormatLens reads a page. They can close or disable the extension, remove it from the browser, clear its local storage, or change its website access through the browser's extension settings.
 
-## Your controls
+## Updates and contact
 
-You control when FormatLens reads a page by using its extraction controls. You can close or disable the extension, remove it from the browser, clear its local storage, or change/revoke website access through the browser's extension settings.
-
-## Children's privacy
-
-FormatLens is a general developer productivity tool and is not directed to children. It does not knowingly collect personal information from anyone.
-
-## Changes to this policy
-
-This policy will be updated if FormatLens functionality or data practices change. The current version will remain available at the public Privacy Policy URL and will show its effective date.
-
-## Contact
-
-For privacy questions or requests, open an issue in the public support repository:
-
-https://github.com/sayanpramanik2012/FormatLens-Extension/issues
+This policy will be updated before any change to FormatLens data practices is released. For privacy questions, open an issue in the [public support repository](https://github.com/sayanpramanik2012/FormatLens-Extension/issues).
