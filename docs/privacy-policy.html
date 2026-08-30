@@ -1,19 +1,71 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="FormatLens privacy policy."><title>Privacy Policy — FormatLens</title><link rel="icon" href="assets/logo-128.png"><link rel="stylesheet" href="styles.css"></head>
-<body>
-  <header class="wrap"><a class="brand" href="./"><img src="assets/logo-128.png" alt=""><span>FormatLens</span></a><nav class="nav"><a href="./">Home</a><a href="https://github.com/sayanpramanik2012/FormatLens-Extension/issues">Contact</a></nav></header>
-  <main class="wrap policy">
-    <h1>Privacy Policy</h1><p><strong>Effective and last updated:</strong> August 31, 2026</p><p>FormatLens is a browser extension that formats JSON and technical text in a browser side panel. This policy explains what the extension can access and how that information is handled.</p>
-    <h2>Information FormatLens accesses</h2><p>When you explicitly use <strong>Extract page text</strong> or <strong>Pick element</strong>, FormatLens may read text you selected on the active webpage, the value or visible text of a focused or chosen page element, and nearby technical text exposed by the active page when no selection or focused value is available.</p><p>FormatLens also stores your selected light, dark, or system theme preference in the browser's local extension storage.</p>
-    <h2>How information is used</h2><p>Page text is used only to create the Pretty, Tree, and Raw views, perform local search, and copy content at your request. All parsing and formatting occurs locally in your browser.</p>
-    <h2>Data collection and transmission</h2><p>FormatLens does not collect, upload, transmit, sell, rent, share, or use webpage content for advertising, analytics, profiling, or any unrelated purpose. The extension has no backend service and makes no network requests.</p><p>Extracted content is held only in the memory of the open side panel. It is discarded when the side panel's extension context is closed or reloaded. FormatLens does not store extracted webpage content in browser storage.</p>
-    <h2>Permissions</h2><ul><li><strong>Side panel:</strong> displays FormatLens beside the webpage.</li><li><strong>Scripting:</strong> runs the bundled local extraction helper after you request extraction or Pick Element mode.</li><li><strong>Storage:</strong> saves only your theme preference.</li><li><strong>HTTP/HTTPS website access:</strong> reads the page element you explicitly inspect on ordinary websites. It is not used for background monitoring.</li></ul>
-    <h2>Third parties</h2><p>FormatLens does not include third-party analytics, advertising, tracking SDKs, remote code, or external processing services. No personal information is disclosed to third parties by the extension.</p>
-    <h2>Your controls</h2><p>You control when FormatLens reads a page by using its extraction controls. You can close or disable the extension, remove it from the browser, clear its local storage, or change/revoke website access through the browser's extension settings.</p>
-    <h2>Children's privacy</h2><p>FormatLens is a general developer productivity tool and is not directed to children. It does not knowingly collect personal information from anyone.</p>
-    <h2>Changes</h2><p>This policy will be updated if FormatLens functionality or data practices change. The current version will remain available here and will show its effective date.</p>
-    <h2>Contact</h2><p>For privacy questions or requests, open an issue in the <a href="https://github.com/sayanpramanik2012/FormatLens-Extension/issues">public support repository</a>.</p>
-  </main>
-  <footer><div class="wrap footer-row"><span>© 2026 Sayan Pramanik · FormatLens</span><span><a href="./">Home</a> · <a href="https://github.com/sayanpramanik2012/FormatLens-Extension">GitHub</a></span></div></footer>
-</body></html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Privacy policy for the FormatLens browser extension.">
+    <meta name="theme-color" content="#080c17">
+    <title>Privacy Policy | FormatLens</title>
+    <link rel="icon" href="assets/logo-128.png">
+    <link rel="stylesheet" href="styles.css?v=2">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="./"><img src="assets/logo-128.png" alt=""><span>FormatLens</span></a>
+        <div class="nav-links"><a href="./">Home</a><a href="https://github.com/sayanpramanik2012/FormatLens-Extension">GitHub</a></div>
+      </nav>
+    </header>
+
+    <main class="page-main wrap">
+      <header class="page-header">
+        <p class="eyebrow">Effective August 31, 2026</p>
+        <h1>Privacy policy</h1>
+        <p class="lede">FormatLens formats webpage text inside your browser. Extracted content is not sent to us or stored by the extension.</p>
+      </header>
+
+      <div class="policy-summary" aria-label="Privacy summary">
+        <div><strong>Local processing</strong><span>Formatting and search happen in the side panel.</span></div>
+        <div><strong>User initiated</strong><span>Page content is read only after you request it.</span></div>
+        <div><strong>No tracking</strong><span>No analytics, advertising, accounts, or profiling.</span></div>
+      </div>
+
+      <article class="policy">
+        <section>
+          <h2>Information FormatLens accesses</h2>
+          <p>When you choose <strong>Extract page text</strong> or <strong>Pick element</strong>, FormatLens may read selected text, the value or visible text of a focused or chosen element, or nearby technical text exposed by the active webpage.</p>
+          <p>The extension stores only your selected system, light, or dark theme preference in local extension storage.</p>
+        </section>
+        <section>
+          <h2>How the information is used</h2>
+          <p>Page text is used only to create Pretty, Tree, and Raw views, perform local search, and copy content when you ask. Extracted content remains in the memory of the open side panel and is discarded when that extension context closes or reloads.</p>
+        </section>
+        <section>
+          <h2>What is not collected or shared</h2>
+          <p>FormatLens does not collect, upload, transmit, sell, rent, or share webpage content. It has no backend, analytics, advertising, tracking SDK, external processing service, or remotely hosted executable code.</p>
+        </section>
+        <section>
+          <h2>Permissions</h2>
+          <ul>
+            <li><code>sidePanel</code> displays FormatLens beside the active webpage.</li>
+            <li><code>scripting</code> runs the packaged extraction helper after you request extraction or Pick element mode.</li>
+            <li><code>storage</code> saves only your theme preference.</li>
+            <li>HTTP and HTTPS website access allows user-requested extraction on ordinary webpages. It is not used for background monitoring.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Your controls</h2>
+          <p>You decide when FormatLens reads a page. You can close or disable the extension, remove it from the browser, clear its local storage, or change its website access through your browser's extension settings.</p>
+        </section>
+        <section>
+          <h2>Questions and updates</h2>
+          <p>For privacy questions, open an issue in the <a href="https://github.com/sayanpramanik2012/FormatLens-Extension/issues">public support repository</a>. If FormatLens functionality or data practices change, this page and its effective date will be updated before the change is released.</p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-row wrap"><p>© 2026 Sayan Pramanik · FormatLens</p><p><a href="./">Home</a> · <a href="https://github.com/sayanpramanik2012/FormatLens-Extension">GitHub</a></p></div>
+    </footer>
+  </body>
+</html>
