@@ -4,9 +4,12 @@ This file contains the prepared values for Microsoft Partner Center. Review them
 
 ## Package and URLs
 
+- **Extension source folder:** `extension/`
 - **Package:** `release/FormatLens-v1.0.0-edge.zip`
+
+To package manually, open `extension/`, select everything inside it, and create the ZIP. Do not ZIP the repository root or create an extra outer `extension` directory inside the archive; Partner Center must find `manifest.json` at the archive root.
 - **Website:** `https://sayanpramanik2012.github.io/FormatLens-Extension/`
-- **Privacy Policy URL:** `https://sayanpramanik2012.github.io/FormatLens-Extension/privacy.html`
+- **Privacy Policy URL:** `https://sayanpramanik2012.github.io/FormatLens-Extension/privacy-policy.html`
 - **Support URL:** `https://github.com/sayanpramanik2012/FormatLens-Extension/issues`
 - **Source repository:** `https://github.com/sayanpramanik2012/FormatLens-Extension`
 
@@ -51,9 +54,9 @@ JSON formatter, JSON viewer, pretty print, payload viewer, ServiceNow payload, d
 
 | Partner Center field | File |
 |---|---|
-| Extension logo | `store-assets/store-logo-300.png` (300×300) |
-| Small promotional tile | `store-assets/small-promo-440x280.png` |
-| Large promotional tile | `store-assets/large-promo-1400x560.png` |
+| Extension logo | `store-assets/extension-logo-300.png` (300×300) |
+| Small promotional tile | `store-assets/small-promotional-tile-440x280.png` |
+| Large promotional tile | `store-assets/large-promotional-tile-1400x560.png` |
 | Screenshot 1 | `store-assets/screenshot-1-pretty-1280x800.png` |
 | Screenshot 2 | `store-assets/screenshot-2-tree-1280x800.png` |
 | Screenshot 3 | `store-assets/screenshot-3-private-1280x800.png` |

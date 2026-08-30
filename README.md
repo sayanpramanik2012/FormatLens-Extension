@@ -2,7 +2,7 @@
 
 FormatLens turns dense JSON and technical text on any webpage into a readable side-panel view without sending the content anywhere.
 
-![FormatLens promotional banner](store-assets/large-promo-1400x560.png)
+![FormatLens promotional banner](store-assets/large-promotional-tile-1400x560.png)
 
 ## What it does
 
@@ -22,7 +22,7 @@ FormatLens turns dense JSON and technical text on any webpage into a readable si
 2. Open `edge://extensions` in Edge or `chrome://extensions` in Chrome.
 3. Enable **Developer mode**.
 4. Select **Load unpacked**.
-5. Choose this repository folder—the folder that directly contains `manifest.json`.
+5. Choose the repository's **`extension`** folder—the folder that directly contains `manifest.json`.
 6. Open a normal HTTP/HTTPS webpage and click the FormatLens toolbar icon.
 
 ## Use FormatLens
@@ -53,20 +53,26 @@ FormatLens is optimized for values such as Request Payload fields. Selecting the
 
 See the full [Privacy Policy](PRIVACY.md).
 
-## Build the assets and store package
+## Repository layout
 
-```powershell
-.\scripts\build-assets.ps1
-.\scripts\package.ps1
+```text
+FormatLens-Extension/
+├── extension/       Load this folder unpacked; ZIP its contents for Edge Add-ons
+├── docs/            GitHub Pages website and public privacy policy
+├── store-assets/    Store logo, promotional tiles, and screenshots
+├── STORE_LISTING.md Copy-ready Partner Center listing and checklist
+└── PRIVACY.md       Privacy policy source
 ```
 
-The packaging script creates `release/FormatLens-v1.0.0-edge.zip` with `manifest.json` at the archive root. Upload that ZIP—not the repository ZIP—to Microsoft Partner Center.
+## Create the Edge Add-ons ZIP
+
+Open `extension/`, select everything inside it, and create a ZIP. The finished archive must have `manifest.json`, `background.js`, and the other extension files at its root—not inside an extra parent directory. Upload that package to Microsoft Partner Center.
 
 ## Publishing kit
 
-- [Edge Add-ons submission copy and field-by-field checklist](STORE_SUBMISSION.md)
+- [Edge Add-ons submission copy and field-by-field checklist](STORE_LISTING.md)
 - [Store artwork](store-assets)
-- [Public privacy website](docs/privacy.html)
+- [Public privacy website](docs/privacy-policy.html)
 - [Privacy policy source](PRIVACY.md)
 
 ## Privacy and security
