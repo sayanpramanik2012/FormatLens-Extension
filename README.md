@@ -6,7 +6,8 @@ FormatLens turns JSON and technical text from a webpage into a readable browser 
 
 ## Features
 
-- Reads selected text, a focused field, or an element chosen with **Pick element**.
+- Formats the exact text you select on a page, including selections inside supported rich-text editor iframes.
+- Falls back to a focused field or technical element when nothing is selected.
 - Detects JSON, escaped JSON, and JSON stored inside strings.
 - Provides syntax-highlighted **Pretty**, **Tree**, and **Raw** views.
 - Searches text, keys, values, and JSON paths.
@@ -24,17 +25,18 @@ FormatLens turns JSON and technical text from a webpage into a readable browser 
 
 ## Use FormatLens
 
-1. Select technical text or focus the field containing it.
+1. Select the JSON or technical text you want to inspect.
 2. Open FormatLens from the browser toolbar.
-3. Select **Extract page text**. If needed, use **Pick element** and choose the field directly.
+3. Select **Format selected text**.
 4. Inspect the result in **Pretty**, **Tree**, or **Raw** view.
+5. If nothing is selected, FormatLens tries the focused field or best matching technical element. You can also use **Pick element**.
 
 ## Permissions
 
 | Permission | Purpose |
 |---|---|
 | `sidePanel` | Displays FormatLens beside the active webpage. |
-| `scripting` | Runs the packaged extraction helper after the user requests it. |
+| `scripting` | Runs the packaged extraction helper after the user requests it, including inside supported page frames. |
 | `storage` | Saves only the selected theme. |
 | HTTP/HTTPS website access | Reads user-chosen content on ordinary webpages. |
 
@@ -42,7 +44,7 @@ FormatLens does not monitor pages in the background or transmit extracted conten
 
 ## Browser limitations
 
-Browser-protected pages and some cross-origin or isolated iframe content cannot be inspected. If a field is inaccessible, select or copy its visible value directly.
+Browser-protected pages and frames that the browser does not allow extensions to inspect remain inaccessible. For ordinary HTTP/HTTPS pages, FormatLens attempts selection extraction across page frames before falling back to focused or visible content.
 
 ## Repository structure
 
