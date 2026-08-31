@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "FormatLens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Format JSON and technical text in a private, local-only browser side panel.",
   "author": "Sayan Pramanik",
   "homepage_url": "https://sayanpramanik2012.github.io/FormatLens-Extension/",
