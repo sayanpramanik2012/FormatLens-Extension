@@ -91,9 +91,9 @@ function formattedText() {
 function render() {
   const text = formattedText();
   if (!state.raw) {
-    $("pretty").textContent = "Select technical text on the page, then choose Extract page text.\n\nOr choose Pick element and click the field you want to inspect.";
+    $("pretty").textContent = "Select the JSON or technical text you want, then choose Format selected text.\n\nIf nothing is selected, FormatLens falls back to the focused field or best matching technical element. You can also use Pick element.";
     $("raw").textContent = "No content extracted yet.";
-    $("tree").innerHTML = '<div class="empty"><strong>No JSON tree yet</strong><span>Extract valid JSON to explore it here.</span></div>';
+    $("tree").innerHTML = '<div class="empty"><strong>No JSON tree yet</strong><span>Format valid JSON to explore it here.</span></div>';
   } else {
     $("pretty").innerHTML = state.isJson ? highlightJson(text) : markText(text);
     $("raw").innerHTML = markText(state.raw);
