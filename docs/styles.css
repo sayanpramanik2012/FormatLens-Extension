@@ -39,8 +39,8 @@ h2 { margin-bottom: 12px; font-size: clamp(31px, 4.5vw, 48px); line-height: 1.1;
 h3 { margin-bottom: 8px; font-size: 19px; letter-spacing: -0.02em; }
 .lede { max-width: 670px; margin-bottom: 30px; color: var(--muted); font-size: clamp(18px, 2vw, 21px); }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; }
-.button { display: inline-flex; gap: 8px; min-height: 46px; align-items: center; justify-content: center; padding: 11px 18px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--text); font-weight: 750; text-decoration: none; transition: transform 150ms ease, border-color 150ms ease, background 150ms ease; }
-.button svg { width: 18px; height: 18px; flex-shrink: 0; }
+.button { display: inline-flex; gap: 10px; min-height: 46px; align-items: center; justify-content: center; padding: 11px 18px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--text); font-weight: 750; text-decoration: none; transition: transform 150ms ease, border-color 150ms ease, background 150ms ease; }
+.button svg { width: 20px; height: 20px; flex-shrink: 0; display: block; }
 .button:hover { transform: translateY(-1px); border-color: #3a4968; background: var(--surface-soft); }
 .button.primary { border-color: var(--accent); background: var(--accent-strong); color: #fff; box-shadow: 0 12px 28px rgba(78, 76, 230, 0.25); }
 .button.primary:hover { background: var(--accent); }

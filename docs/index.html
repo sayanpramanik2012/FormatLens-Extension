@@ -10,7 +10,7 @@
     <meta property="og:image" content="assets/social-preview.png">
     <title>FormatLens — Readable JSON beside any webpage</title>
     <link rel="icon" href="assets/logo-128.png">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
   </head>
   <body>
     <header class="site-header">
@@ -32,15 +32,40 @@
           <h1>Make messy payloads readable.</h1>
           <p class="lede">Select JSON, logs, or technical text on a webpage and inspect a clean Pretty, Tree, or Raw view in the side panel—without losing your place.</p>
           <div class="actions">
-            <a class="button primary" href="https://chromewebstore.google.com/detail/formatlens/lokmbeeieeeipfhhebihonlhoaimnplo" target="_blank" rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C8.21 0 4.831 1.757 2.632 4.501l3.953 6.848A5.454 5.454 0 0 1 12 6.545h10.691A12 12 0 0 0 12 0zM1.931 5.47A11.943 11.943 0 0 0 0 12c0 6.012 4.42 10.991 10.189 11.864l3.953-6.847a5.45 5.45 0 0 1-6.865-2.29zm13.342 2.166a5.446 5.446 0 0 1 2.181 6.865l-5.345 9.257c.617.075 1.246.116 1.884.116 6.627 0 12-5.373 12-12 0-1.54-.29-3.011-.818-4.364zM12 16.364a4.364 4.364 0 1 1 0-8.728 4.364 4.364 0 0 1 0 8.728Z"/></svg>
-              Add to Chrome
+            <a class="button primary" id="btn-chrome" href="https://chromewebstore.google.com/detail/formatlens/lokmbeeieeeipfhhebihonlhoaimnplo" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true" style="width: 20px; height: 20px; margin-right: 8px; flex-shrink: 0; vertical-align: middle;">
+                <defs>
+                  <linearGradient id="fl-chrome-a" x1="3.2173" y1="15" x2="44.7812" y2="15" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#d93025"/><stop offset="1" stop-color="#ea4335"/></linearGradient>
+                  <linearGradient id="fl-chrome-b" x1="20.7219" y1="47.6791" x2="41.5039" y2="11.6837" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fcc934"/><stop offset="1" stop-color="#fbbc04"/></linearGradient>
+                  <linearGradient id="fl-chrome-c" x1="26.5981" y1="46.5015" x2="5.8161" y2="10.506" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1e8e3e"/><stop offset="1" stop-color="#34a853"/></linearGradient>
+                </defs>
+                <circle cx="24" cy="24" r="12" fill="#ffffff"/>
+                <path d="M24,12H44.7812a23.9939,23.9939,0,0,0-41.5639.0029L13.6079,30l.0093-.0024A11.9852,11.9852,0,0,1,24,12Z" fill="url(#fl-chrome-a)"/>
+                <circle cx="24" cy="24" r="9.5" fill="#1a73e8"/>
+                <path d="M34.3913,30.0029,24.0007,48A23.994,23.994,0,0,0,44.78,12.0031H23.9989l-.0025.0093A11.985,11.985,0,0,1,34.3913,30.0029Z" fill="url(#fl-chrome-b)"/>
+                <path d="M13.6086,30.0031,3.218,12.006A23.994,23.994,0,0,0,24.0025,48L34.3931,30.0029l-.0067-.0068a11.9852,11.9852,0,0,1-20.7778.007Z" fill="url(#fl-chrome-c)"/>
+              </svg>
+              <span>Add to Chrome</span>
             </a>
-            <a class="button primary" href="https://microsoftedge.microsoft.com/addons/detail/formatlens/bcmmmlkjhidiajameihckggdpbkigfci" target="_blank" rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.006 3.892a7.35 7.35 0 0 0-4.088 1.488C2.56 8.016 1.42 12.012 3.16 15.652c.228.476.516.924.852 1.332a6.83 6.83 0 0 1-.36-2.184c0-3.328 2.256-6.192 5.412-6.936a5.48 5.48 0 0 1 1.344-.168c2.976 0 5.4 2.424 5.4 5.4 0 .3-.024.588-.072.876a4.84 4.84 0 0 1-.456 1.344 3.73 3.73 0 0 1-3.36 2.088 3.74 3.74 0 0 1-3.72-3.444h-3.84c.324 4.092 3.756 7.308 7.944 7.308 3.996 0 7.32-2.928 7.848-6.804.096-.696.144-1.404.144-2.124 0-6.108-4.524-11.148-10.488-11.452zm7.14 8.796c.264-.816.408-1.68.408-2.58 0-4.044-3.288-7.332-7.332-7.332-1.74 0-3.336.612-4.596 1.632 1.092-.372 2.292-.588 3.54-.588 5.436 0 9.876 4.14 10.344 9.444a7.84 7.84 0 0 0-2.364-.576z"/></svg>
-              Get for Edge
+            <a class="button primary" id="btn-edge" href="https://microsoftedge.microsoft.com/addons/detail/formatlens/bcmmmlkjhidiajameihckggdpbkigfci" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 256 256" aria-hidden="true" style="width: 20px; height: 20px; margin-right: 8px; flex-shrink: 0; vertical-align: middle;">
+                <defs>
+                  <linearGradient id="fl-edge-a" x1="63.3" y1="84" x2="241.7" y2="84" gradientTransform="matrix(1 0 0 -1 0 266)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0c59a4"/><stop offset="1" stop-color="#114a8b"/></linearGradient>
+                  <linearGradient id="fl-edge-c" x1="157.3" y1="161.4" x2="46" y2="40.1" gradientTransform="matrix(1 0 0 -1 0 266)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1b9de2"/><stop offset=".2" stop-color="#1595df"/><stop offset=".7" stop-color="#0680d7"/><stop offset="1" stop-color="#0078d4"/></linearGradient>
+                  <radialGradient id="fl-edge-e" cx="113.4" cy="570.2" r="202.4" gradientTransform="matrix(-.04 1 2.13 .08 -1179.5 -106.7)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#35c1f1"/><stop offset=".1" stop-color="#34c1ed"/><stop offset=".2" stop-color="#2fc2df"/><stop offset=".3" stop-color="#2bc3d2"/><stop offset=".7" stop-color="#36c752"/></radialGradient>
+                  <radialGradient id="fl-edge-f" cx="376.5" cy="568" r="97.3" gradientTransform="matrix(.28 .96 .78 -.23 -303.8 -148.5)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#66eb6e"/><stop offset="1" stop-color="#66eb6e" stop-opacity="0"/></radialGradient>
+                </defs>
+                <path d="M235.7 195.5a93.7 93.7 0 0 1-10.6 4.7 101.9 101.9 0 0 1-35.9 6.4c-47.3 0-88.5-32.5-88.5-74.3a31.5 31.5 0 0 1 16.4-27.3c-42.8 1.8-53.8 46.4-53.8 72.5 0 74 68.1 81.4 82.8 81.4 7.9 0 19.8-2.3 27-4.6l1.3-.4a128.3 128.3 0 0 0 66.6-52.8 4 4 0 0 0-5.3-5.6Z" transform="translate(-4.6 -5)" fill="url(#fl-edge-a)"/>
+                <path d="M110.3 246.3A79.2 79.2 0 0 1 87.6 225a80.7 80.7 0 0 1 29.5-120c3.2-1.5 8.5-4.1 15.6-4a32.4 32.4 0 0 1 25.7 13 31.9 31.9 0 0 1 6.3 18.7c0-.2 24.5-79.6-80-79.6-43.9 0-80 41.6-80 78.2a130.2 130.2 0 0 0 12.1 56 128 128 0 0 0 156.4 67 75.5 75.5 0 0 1-62.8-8Z" transform="translate(-4.6 -5)" fill="url(#fl-edge-c)"/>
+                <path d="M157 153.8c-.9 1-3.4 2.5-3.4 5.6 0 2.6 1.7 5.2 4.8 7.3 14.3 10 41.4 8.6 41.5 8.6a59.6 59.6 0 0 0 30.3-8.3 61.4 61.4 0 0 0 30.4-52.9c.3-22.4-8-37.3-11.3-43.9C228 28.8 182.3 5 132.6 5a128 128 0 0 0-128 126.2c.5-36.5 36.8-66 80-66 3.5 0 23.5.3 42 10a72.6 72.6 0 0 1 30.9 29.3c6.1 10.6 7.2 24.1 7.2 29.5s-2.7 13.3-7.8 19.9Z" transform="translate(-4.6 -5)" fill="url(#fl-edge-e)"/>
+                <path d="M157 153.8c-.9 1-3.4 2.5-3.4 5.6 0 2.6 1.7 5.2 4.8 7.3 14.3 10 41.4 8.6 41.5 8.6a59.6 59.6 0 0 0 30.3-8.3 61.4 61.4 0 0 0 30.4-52.9c.3-22.4-8-37.3-11.3-43.9C228 28.8 182.3 5 132.6 5a128 128 0 0 0-128 126.2c.5-36.5 36.8-66 80-66 3.5 0 23.5.3 42 10a72.6 72.6 0 0 1 30.9 29.3c6.1 10.6 7.2 24.1 7.2 29.5s-2.7 13.3-7.8 19.9Z" transform="translate(-4.6 -5)" fill="url(#fl-edge-f)"/>
+              </svg>
+              <span>Get for Edge</span>
             </a>
-            <a class="button" href="https://github.com/sayanpramanik2012/FormatLens-Extension" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+            <a class="button" href="https://github.com/sayanpramanik2012/FormatLens-Extension" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width: 18px; height: 18px; margin-right: 8px; flex-shrink: 0; vertical-align: middle;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>View source on GitHub</span>
+            </a>
           </div>
         </div>
 
@@ -114,5 +139,17 @@
         <p><a href="privacy-policy.html">Privacy</a> · <a href="https://chromewebstore.google.com/detail/formatlens/lokmbeeieeeipfhhebihonlhoaimnplo" target="_blank" rel="noopener noreferrer">Chrome Store</a> · <a href="https://microsoftedge.microsoft.com/addons/detail/formatlens/bcmmmlkjhidiajameihckggdpbkigfci" target="_blank" rel="noopener noreferrer">Edge Add-ons</a> · <a href="https://github.com/sayanpramanik2012/FormatLens-Extension/issues" target="_blank" rel="noopener noreferrer">Support</a> · <a href="https://github.com/sayanpramanik2012/FormatLens-Extension" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
     </footer>
+    <script>
+      (function() {
+        try {
+          var isEdge = /Edg\//.test(navigator.userAgent);
+          var chromeBtn = document.getElementById('btn-chrome');
+          var edgeBtn = document.getElementById('btn-edge');
+          if (isEdge && chromeBtn && edgeBtn) {
+            edgeBtn.parentNode.insertBefore(edgeBtn, chromeBtn);
+          }
+        } catch (e) {}
+      })();
+    </script>
   </body>
 </html>
