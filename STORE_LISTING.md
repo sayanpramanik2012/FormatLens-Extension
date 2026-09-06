@@ -5,10 +5,11 @@ Prepared submission copy for FormatLens 1.0.0.
 ## URLs
 
 - **Website:** https://sayanpramanik2012.github.io/FormatLens-Extension/
+- **Chrome Web Store:** https://chromewebstore.google.com/detail/formatlens/lokmbeeieeeipfhhebihonlhoaimnplo
+- **Microsoft Edge Add-ons:** https://microsoftedge.microsoft.com/addons/detail/formatlens/bcmmmlkjhidiajameihckggdpbkigfci
 - **Privacy policy:** https://sayanpramanik2012.github.io/FormatLens-Extension/privacy-policy.html
 - **Support:** https://github.com/sayanpramanik2012/FormatLens-Extension/issues
 - **Source:** https://github.com/sayanpramanik2012/FormatLens-Extension
-- **Store listing:** Pending publication
 
 ## Store properties
 

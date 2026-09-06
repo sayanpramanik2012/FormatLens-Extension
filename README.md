@@ -15,6 +15,13 @@ FormatLens turns JSON and technical text from a webpage into a readable browser 
 - Supports word wrap and system, light, and dark themes.
 - Processes content locally without accounts, analytics, advertising, or a backend.
 
+## Install
+
+Install FormatLens directly from your browser's extension store:
+
+- [Chrome Web Store](https://chromewebstore.google.com/detail/formatlens/lokmbeeieeeipfhhebihonlhoaimnplo)
+- [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/formatlens/bcmmmlkjhidiajameihckggdpbkigfci)
+
 ## Install locally
 
 1. Clone or download this repository.
@@ -60,6 +67,8 @@ FormatLens-Extension/
 ## Publishing
 
 - [Website](https://sayanpramanik2012.github.io/FormatLens-Extension/)
+- [Chrome Web Store](https://chromewebstore.google.com/detail/formatlens/lokmbeeieeeipfhhebihonlhoaimnplo)
+- [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/formatlens/bcmmmlkjhidiajameihckggdpbkigfci)
 - [Privacy policy](https://sayanpramanik2012.github.io/FormatLens-Extension/privacy-policy.html)
 - [Store listing copy and checklist](STORE_LISTING.md)
 - [Store artwork](store-assets)
